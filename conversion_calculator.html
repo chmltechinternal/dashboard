@@ -119,6 +119,13 @@ OPTIMAL_RANGES = {
 <body>
   <!-- Put Python code inside the the <py-script> tag -->
     <py-script>
+import ipywidgets as widgets
+from IPython.display import display, HTML, clear_output
+import plotly.graph_objects as go
+import numpy as np
+from scipy.special import expit
+
+        
        # Create parameter sections
 temperature_params = widgets.VBox([
     widgets.FloatSlider(
